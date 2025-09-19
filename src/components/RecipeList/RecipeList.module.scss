@@ -1,0 +1,22 @@
+@use '../../styles/variables' as *;
+
+.recipeList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  margin: 36px 0;
+}
+
+.recipeListTitle {
+  text-transform: uppercase;
+  color: $primary-text-color;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.recipeListWrapper {
+  margin-top: 14px;
+}
+
+
+

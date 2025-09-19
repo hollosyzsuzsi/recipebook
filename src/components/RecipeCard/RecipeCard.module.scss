@@ -1,0 +1,72 @@
+@use '../../styles/variables' as *;
+
+.recipeCardWrapper {
+  background-image: url(../../assets/images/cardbg.png);
+  width: 371px;
+  height: 220px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actionBtn {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #999BA8;
+  }
+}
+
+.favBtn {
+  width: 60px;
+  height: 60px;
+  background-color: #FFEECA;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-btn-hover;
+  }
+}
+
+
+.buttonsWrapper {
+  display: flex;
+}
+
+.favoriteBtnWrapper {
+  display: flex;
+  width: 50%;
+}
+
+.restBtnsWrapper {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+.recipeCardTitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: $primary-text-color;
+}
+
+.recipeDataWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipeCardIngredients, .recipeCardTime {
+  font-size: 16px;
+  font-weight: 400;
+  color: $primary-text-color;
+  opacity: 50%;
+}
+

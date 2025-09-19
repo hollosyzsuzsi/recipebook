@@ -1,0 +1,54 @@
+@use '../../styles/variables' as *;
+
+.sidebar {
+  width: 160px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #FFEECA;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+.sidebarNav:first-child {
+  margin-top: 124px;
+}
+
+.navIcon {
+  width: 34px;
+  height: 33px;
+}
+
+.navLink.active {
+  height: 100px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+
+  &:hover {
+    background-color: #fce4b1;
+  }
+}
+
+.navLink {
+  height: 100px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFEECA;
+
+  &:hover {
+    background-color: #fce4b1
+
+  }
+}

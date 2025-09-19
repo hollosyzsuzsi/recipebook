@@ -1,0 +1,243 @@
+@use '../../styles/variables' as *;
+
+.recipeForm {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+
+}
+
+.formLabel {
+  font-size: 24px;
+  font-weight: 400;
+  color: $secondary-text-color;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.recipeName {
+  width: 500px;
+  height: 77px;
+  border-radius: 10px;
+  color: $primary-text-color;
+  border: 1px solid $secondary-text-color;
+  background-color: #FFFFFF;
+  font-size: 24px;
+  padding: 24px;
+}
+
+.recipeName::placeholder,
+.recipeCookingTime::placeholder,
+.minutes::placeholder,
+.description::placeholder,
+.formSelectIng::placeholder,
+.formSelectUnit::placeholder,
+.inputAmount::placeholder {
+  color: $secondary-text-color;
+  opacity: 50%;
+}
+
+.recipeCookingTime {
+  width: 219px;
+  height: 77px;
+  border-radius: 10px;
+  color: $primary-text-color;
+  font-size: 24px;
+  padding: 24px;
+}
+
+.minutes {
+  color: $primary-text-color;
+  font-size: 24px;
+  padding: 0 0 16px 0;
+}
+
+.timeWrapper {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+
+.description {
+  width: 832px;
+  height: 135px;
+  border-radius: 10px;
+  color: $primary-text-color;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  padding: 24px;
+  line-height: 1.5;
+}
+
+.thirdRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.quantityWrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.formSelectIng {
+  width: 500px;
+  height: 77px;
+  border-radius: 10px;
+  color: $primary-text-color;
+  font-size: 24px;
+  padding: 24px;
+  background-color: #FFFFFF;
+  margin-right: 24px;
+}
+
+.formSelectUnit {
+  width: 116px;
+  height: 77px;
+  border-radius: 10px;
+  color: $primary-text-color;
+  font-size: 24px;
+  padding: 12px;
+  background-color: #FFFFFF;
+}
+
+.inputAmount {
+  width: 76px;
+  height: 77px;
+  border-radius: 10px;
+  color: $primary-text-color;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.addBtn {
+  font-size: 24px;
+  font-weight: 400;
+  color: $primary-btn-color;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 30px auto;
+
+  &:hover {
+    color: $primary-btn-hover;
+  }
+}
+
+.submitBtn {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: $primary-btn-color;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 276px;
+  height: 61px;
+  margin: 20px auto;
+
+  &:hover {
+    background-color: $primary-btn-hover;
+  }
+}
+
+.ingredientsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ingredientsListWrapper {
+  max-height: 230px;
+  overflow-y: auto;
+}
+
+.ingredientsListWrapper.addRecipeModal {
+  max-height: 130px;
+  overflow-y: auto;
+}
+
+.ingredientsItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.quantityLine {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.ingredientListControls {
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredientName,
+.inputAmount,
+.formSelectUnit {
+  background-color: #ffffff;
+  border: 1px solid $secondary-text-color;
+  border-radius: 10px;
+  padding: 24px;
+  font-size: 24px;
+  color: $primary-text-color;
+  height: 77px;
+  display: flex;
+  align-items: center;
+}
+
+.ingredientName {
+  flex: 2;
+  min-width: 500px;
+}
+
+.inputAmount {
+  flex: 1;
+  text-align: center;
+}
+
+.formSelectUnit {
+  flex: 1;
+}
+
+.errorMsg {
+  color: #be343f;
+  font-size: 12px;
+}
+
+.errorWrapperRow {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 56px;
+}
+
+.removeBtn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+
+    &:hover {
+      background-color: #999BA8;
+    }
+}

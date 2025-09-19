@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+
+.favoritesPageWrapper {
+  margin-left: 160px;
+  padding: 36px;
+}
+
+.favoritesTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #EBC060;
+  text-transform: uppercase;
+}

@@ -1,0 +1,102 @@
+@use '../../styles/variables' as *;
+
+.modalWrapper {
+  width: 644px;
+  height: 302px;
+  background-color: #FFFFFF;
+  padding: 24px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 24px;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.modalTitle {
+  font-size: 36px;
+  font-weight: 400;
+  color: $primary-text-color;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modalText {
+  font-size: 24px;
+  font-weight: 400;
+  color: $secondary-text-color;
+  text-align: center;
+}
+
+.cancelBtn {
+  background-color: $secondary-text-color;
+  color: $primary-text-color;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #999BA8;
+  }
+}
+
+.submitBtn {
+  background-color: $primary-btn-color;
+  color: #FFFFFF;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: $primary-btn-hover;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.closeBtn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $secondary-text-color;
+  }
+}

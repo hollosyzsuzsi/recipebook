@@ -1,0 +1,36 @@
+@use '../../styles/variables' as *;
+
+.homePageWrapper {
+  margin-left: 160px;
+  padding: 36px;
+}
+
+.homePageTitle {
+  font-size: 48px;
+  font-weight: 700;
+  color: #EBC060;
+  text-transform: uppercase;
+}
+
+.addRecipeBtn {
+  background-color: $primary-btn-color;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-btn-hover;
+  }
+}
+
+.homePageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}

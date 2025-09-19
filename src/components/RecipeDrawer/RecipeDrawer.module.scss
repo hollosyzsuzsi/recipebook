@@ -1,0 +1,135 @@
+@use '../../styles/variables' as *;
+
+.drawerContainer {
+  width: 600px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  z-index: 1000;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+}
+
+.drawerOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.drawerContainer.open {
+  transform: translateX(0);
+}
+
+.closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.recipeImg {
+  background-image: url(../../assets/images/drawerbg.png);
+  width: 600px;
+  height: 336px;
+}
+
+.drawerText {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 24px;
+}
+
+.drawerHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipeName, .recipeTime {
+font-size: 36px;
+font-weight: 400;
+color: $primary-text-color;
+text-transform: uppercase;
+}
+
+.description, .ingredientsList {
+  font-size: 24px;
+  font-weight: 400;
+  color: $secondary-text-color;
+}
+
+.ingredientsList {
+  list-style: none;
+  padding-left: 0;
+  line-height: 2;
+}
+
+.ingredientsItem {
+  position: relative;
+  padding-left: 24px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: $primary-btn-color;
+    border-radius: 50%;
+  }
+}
+
+.ingredientsTitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: $primary-text-color;
+  text-transform: uppercase;
+}
+
+.actionBtn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #999BA8;
+  }
+}
+
+.favBtn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 10px;
+  background-color: #FFEECA;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-btn-hover;
+  }
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.remainingButtonsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
