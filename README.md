@@ -24,7 +24,7 @@ Built with React, React Router, React Hook Form, and Vite.
 
 Clone the repository and install dependencies:
 
-git clone https://github.com/your-username/recipebook.git
+git clone https://github.com/hollosyzsuzsi/recipebook.git
 cd recipebook
 npm install
 
@@ -65,3 +65,4 @@ Sass (styling)
 Vite (bundler & dev server)
 
 ESLint + Prettier (linting & formatting)
+
