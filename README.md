@@ -28,16 +28,6 @@ git clone https://github.com/hollosyzsuzsi/recipebook.git
 cd recipebook
 npm install
 
-🛠 Scripts
-Command	Description
-npm run dev	Run Vite dev server & JSON server concurrently
-npm run start-vite	Start only the Vite development server
-npm run start-server	Start JSON server on port 3000
-npm run devServer	Start JSON server on port 3004
-npm run build	Build the project for production
-npm run preview	Preview the production build
-npm run lint	Run ESLint checks
-
 
 ⚙️ Development
 
@@ -65,4 +55,5 @@ Sass (styling)
 Vite (bundler & dev server)
 
 ESLint + Prettier (linting & formatting)
+
 
